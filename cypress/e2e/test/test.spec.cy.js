@@ -37,9 +37,9 @@ Given(/^that I am able to access the shadowDOM URL$/, () => {
 	cy.contains('Shadow DOM').should('be.visible').click()
 });
 
-Then(/^I insert username$/, (args1,args2) => {
-  cy.log(cy.typeAText(args1,args2))
-	
+Then(/^I insert username$/, (args1) => {
+  cy.log(args1)
+	cy.insertText(args1)
 });
 
 

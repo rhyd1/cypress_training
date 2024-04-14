@@ -11,6 +11,7 @@ Feature: Testing for file upload
             | cypress/fixtures/example.jpg  |
             | cypress/fixtures/example.csv  |
             | cypress/fixtures/example.json  |
+            | cypress/fixtures/example.png  |
 
     Scenario Outline: Testing for ShadowDOM
         Given that I am able to access the shadowDOM URL

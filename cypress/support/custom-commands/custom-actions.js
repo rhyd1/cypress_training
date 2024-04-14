@@ -13,6 +13,9 @@ Cypress.Commands.add("SwitchFiles", (filename) => {
         case 'cypress/fixtures/example.jpg':
           cy.get('input[type="file').should('be.visible').selectFile(filename)
           cy.contains('File Successfully Uploaded').should('be.visible')
+        case 'cypress/fixtures/example.png':
+          cy.get('input[type="file').should('be.visible').selectFile(filename)
+          cy.contains('File Successfully Uploaded').should('be.visible')
             break
         case 'cypress/fixtures/example.csv':
           cy.get('input[type="file').should('be.visible').selectFile(filename)
